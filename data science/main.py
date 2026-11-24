@@ -45,7 +45,7 @@ print(array9)
 array10 = numpy.sort(array8)
 print(array10)
 array11 = numpy.array([1,3,5,2,9,7,3,3,4],int).reshape((3,3))
-#axis=1 is row rise, axis=0 is column wise
+#axis=1 is row wise, axis=0 is column wise
 print(array11,end='\n\n')
 print(numpy.sort(array11),end='\n\n')
 print(numpy.sort(array11,axis=0),end='\n\n')
@@ -53,3 +53,16 @@ print(numpy.sort(array11,axis=0),end='\n\n')
 print(array7[0:20:2])
 #conditional slicing
 print(array7[(array7%3==0)&(array7%5==0)])
+#sclicing for different index positions
+print(array7[[1,2,3,4,9,15,18]])
+
+def square(value):
+    return value ** 2
+
+print(square(array7))
+
+array12 = numpy.array([True,False,False,True])
+array13 = numpy.array([False,True,False,True])
+print(array12 & array13)
+print(array12 | array13)
+print(~array12)

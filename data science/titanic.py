@@ -1,0 +1,10 @@
+import numpy, pandas
+titanic_data = pandas.read_csv('titanic.csv')
+print(titanic_data)
+print(titanic_data.columns)
+print(titanic_data.head())
+print(titanic_data.tail())
+titanic_data.info()
+print(titanic_data.shape)
+print(titanic_data.size)
+print(titanic_data.ndim)

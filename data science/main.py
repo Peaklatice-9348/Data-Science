@@ -66,3 +66,20 @@ array13 = numpy.array([False,True,False,True])
 print(array12 & array13)
 print(array12 | array13)
 print(~array12)
+
+array14 = numpy.random.randint(1,50,10)
+print(array14,end='\n\n')
+print(array14.max(),end='\n\n')
+print(array14.min(),end='\n\n')
+array15 = array14.reshape((2,5))
+print(array15,end='\n\n')
+print(numpy.sort(array15),end='\n\n')
+
+array16 = numpy.arange(1,17,1).reshape((4,4))
+def one_or_zero(value):
+    return value % 2
+print(array16)
+array17 = one_or_zero(array16)
+print(array17)
+print(len(array17[array17 == 0]))
+print(len(array17[array17 == 1]))
